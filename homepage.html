@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+ <script src="./homepage.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .card-img-top{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand  " href="./homepage.html" ><img src="./logo.png" width="50" height="50" class="d-inline-block align-top" alt="logo"><kbd> <span class="text-warning" style="width:200px;height:50px;">Cybage Labs</span></kbd></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="./homepage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="./adminLogin.html">Admin Login</a>
+            </li>
+            
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./userLogin.html">Login In</a>
+                <a class="dropdown-item" href="./userregistration.html">Sign Up</a>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            
+            <button class="btn btn-light my-2 my-sm-0" type="button">Feedback</button>
+          </form>
+      </nav>
+
+      <div class="container-fluid"></div>
+ </div>
+
+ <div class="container-fluid">
+    <div class="container-fluid bg-light" >
+        <br><br><br><br>
+        
+        <div class="row ">
+            <div class="col-3">
+                <div class="card" style="width: 17rem; height: auto;">
+                    <img class="card-img-top cardimg" src="data:image/jpeg;base64,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" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Blood Test</h5>
+                        <p class="card-text">Choose from wide range of 4000+ tests & profiles. Get your blood test done
+                            at
+                            the comfort of your Home with SRS Labs.</p>
+                        <a href="./userLogin.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 17rem;  ">
+                    <img class="card-img-top cardimg" src="https://www.news-medical.net/images/news/ImageForNews_707508_16475123648152615.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hemoglobin Test</h5>
+                        <p class="card-text">A hemoglobin test measures the levels of hemoglobin in your blood. Hgb is what makes red blood cells look red.</p>
+                        <a href="./userLogin.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 17rem; height: 20; ">
+                    <img class="card-img-top cardimg" src="https://www.indiaspend.com/h-upload/old_images/1600x960_342850-covidtest1400x563.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Covid Test</h5>
+                        <p class="card-text">This is a laboratory test that can identify the virus that causes COVID-19.
+                        This test is intended for the detection of the covid.</p>
+                        <a href="./userLogin.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 17rem;height: auto; ">
+                    <img class="card-img-top cardimg" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/318/318192/cbc-test.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">CBC Test</h5>
+                        <p class="card-text">A complete blood count (CBC) is a test that counts the cells that make up your 
+                            blood: RBC, WBC and platelets. </p>
+                        <a href="./userLogin.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+
+  <!--About Us-->
+  <section id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+            <!--About us tule and description-->
+                <h2>About Us</h2>
+            
+            </div>
+        </div>
+    </div>
+    <div class="choose-us-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--About Lab Image-->
+                    <div class="about-image">
+                        <img src="https://ak.picdn.net/shutterstock/videos/3745493/thumb/4.jpg" alt="lab image" height="350" width="400">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--Why choose us title-->
+                    <div class="choose-us-title">
+                        <h2>Why Choose Us</h2>
+                        <p>
+                            What people are saying About us
+                        </p>
+                    </div>
+                    <!--Why choose us description-->
+                    <div class="choose-us-des">
+                        <!--choose us itme 1-->
+                        <div class="choose-us-item1">
+                            <div><i class="fa fa-bolt"></i></div>
+                            <!--choose us item $ title & description-->
+                            <div class="feedback">
+                                <p>"A very good home collection and lab testing service provided by this center"-<b>Aditya</b>(WadgaonSheri,Pune)</p>
+                            </div>
+
+                            </p>
+                        </div>
+
+                        <!--choose us itme 2-->
+                        <div class="choose-us-item2">
+                            <div><i class="fa fa-bullhorn"></i></div>
+                            <!--choose us item $ title & description-->
+                            <div class="feedback">
+                                <p>"Excellent service provided by aaa labs"-<b>Abhi</b>(Kharadi,Pune)</p>
+                            </div>
+
+                            </p>
+                        </div>
+                        <!--choose us itme 3-->
+                        <div class="choose-us-item2">
+                            <div><i class="fa fa-bflag-o"></i></div>
+                            <!--choose us item $ title & description-->
+                            <div class="feedback">
+                                <p>"Appointment times are easily available and waiting time is less"-<b>Kunal</b>(Hadapsar,Pune)</p>
+                            </div>
+
+                            </p>
+                        </div>
+                        <!--choose us itme 4-->
+                        <div class="choose-us-item2">
+                            <div><i class="fa fa-burrito"></i></div>
+                            <!--choose us item $ title & description-->
+                            <div class="feedback">
+                                <p>"All the tests are easily available and cost efficiency is less"-<b>Pooja</b>(Vimannagar,Pune)</p>
+                            </div>
+
+                            
+                            </p>
+                        </div>
+                        <!--choose us itme 5-->
+                            
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+            <!--Section: Contact v.2-->
+<section class="mb-4" id="CONTACT">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+  
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Enter your comments"></textarea>
+                            <label for="message"></label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left" style="margin-left:200px;">
+                <a class="btn btn-primary" id="feedback">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!-- <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@mdbootstrap.com</p>
+                </li>
+            </ul>
+        </div> -->
+        <!--Grid column-->
+
+    </div>
+
+
+
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="copyright">
+                    <p>copyright &copy;2022<a href="#">aaa pathlabs</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="scroll-top"> 
+                    <a href="#HOME"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
+
+                        
+

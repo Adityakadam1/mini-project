@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./userFunctionality.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body id="bd">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand  " href="./homepage.html" ><img src="./logo.png" width="50" height="50" class="d-inline-block align-top" alt="logo"><kbd> <span class="text-warning" style="width:200px;height:50px;">Cybage Labs</span></kbd></a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+              <a class="nav-link text-light" href="./homepage.html">Home </a>
+            </li> -->
+            <!-- <li class="nav-item active">
+              <a class="nav-link text-light" href="./adminLogin.html">Admin Login</a>
+            </li> -->
+            
+            <!-- <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./userLogin.html">Login In</a>
+                <a class="dropdown-item" href="./userregistration.html">Sign Up</a>
+            </div> -->
+            </li>
+          </ul>
+        </div>
+        <div id="session"></div>
+      
+    <h1>Welcome user</h1><p id="sessionmn"></p></nav><br>
+     <span id="d1"  style="width: 30% ; margin-left: 620px;">
+      <button class="btn btn-info bookapt" onclick=bookAppointment() style="border:1px solid black;">Book Appointment</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-info checkapt" onclick=checkAptStatus() style="border:1px solid black;">Check Appointment Status</button>
+     </span>
+     <br>
+     
+        
+    
+    <br>
+    <span  style="width: 30% ; margin-left: 620px; ">
+    <input type="text" class="form-control-lg form-control " Value="Search test" id="search" style="width: 300px;margin-left:650px;"><br>
+    <button id="searchbtn"  onclick=myFunction() class="btn btn-primary" style="border:1px solid black ; margin-left: 650px;">Search Test</button>
+    <br><br>
+    <div id="onedata">
+
+
+    </div>
+  </span>
+    
+    <!-- <button id="aptstatus">Appointment Status</button>
+    <div id="show-status"> -->
+
+
+    </div>
+
+    <br>
+    <br>
+    <span>
+    <div id="showStatus" ></div>
+    </span>
+
+    <div id="div" style="margin-left: 450px;">
+        <h1>TEST DETAILS</h1>
+       
+        <br>
+            
+        <!-- <button id="showData">Display Data</button> -->
+        
+        <table id="showtbl" border="1" cellpadding="2" style="border: 2px solid black;">
+            <tr>
+                <th>TEST ID</th>
+                <th>TEST NAME</th>
+                <th>TEST DESCRIPTION</th>
+                <th>TEST DATE</th>
+                <th>TEST PRICE</th>
+                <th>LOCATION</th>
+              
+            </tr>
+          
+        </table> 
+
+
+
+    </div>
+    <script>
+       var umail= localStorage.getItem("uemail"); 
+       document.getElementById("sessionmn").innerHTML+=umail;
+    </script>
+</body>
+</html>

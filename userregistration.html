@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./userreg.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script>
+      $(document).ready
+(
+    function(){
+        let  uname=0;
+        let  uaddress=0;
+        let  ucontact=0;
+        let  umail=0;
+        let  upass=0;
+        let ucpass=0;
+        $("#submit").click(
+            function(event) {
+
+                if(($("#name").val()==null || $("#name").val()=="")){
+                    if(uname==0){
+                        uname++;
+                       $("#valid1").append("Name cannot be empty")
+                    }
+                }
+                else if(($("#address").val()==null  || $("#address").val()=="")){
+                    if(uaddress==0){
+                      uaddress++;
+                        $("#valid2").append(("Address cannot be empty"))
+                    }
+                }
+                else if(($("#contact").val()==null  || $("#contact").val()=="")){
+                    if(ucontact==0){
+                      ucontact++;
+                        $("#valid3").append(("Contact details cannot be empty"))
+                    }
+                }
+                else if(($("#email").val()==null  || $("#email").val()=="")){
+                    if(umail==0){
+                      umail++;
+                        $("#valid4").append(("Email ID cannot be empty"))
+                    }
+                }
+                else if(($("#pwd").val()==null  || $("#pwd").val()=="")){
+                    if(upass==0){
+                      upass++;
+                        $("#valid5").append(("Password cannot be empty"))
+                    }
+                }
+                else if(($("#cpwd").val()==null  || $("#cpwd").val()=="")){
+                    if(ucpass==0){
+                      ucpass++;
+                        $("#valid6").append(("Re-enter the password"))
+                    }
+                }
+            
+            
+              }
+            
+            );
+        }
+    );
+              
+        
+    </script>
+</head>
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand  " href="./homepage.html" ><img src="./logo.png" width="50" height="50" class="d-inline-block align-top" alt="logo"><kbd> <span class="text-warning" style="width:200px;height:50px;">Cybage Labs</span></kbd></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="./homepage.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="./adminLogin.html">Admin Login</a>
+        </li>
+        
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            User Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./userLogin.html">Login In</a>
+            <a class="dropdown-item" href="./userregistration.html">Sign Up</a>
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+        
+        <button class="btn btn-light my-2 my-sm-0" type="button">Feedback</button>
+      </form>
+  </nav> -->
+   
+   <section class="h-100 bg-dark">
+      
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+           
+            <div class="col" >
+              <div class="card card-registration my-4" style="padding-left: 200px;">
+                 <div class="row g-8">
+                  <div class="col-xl-4 d-none d-xl-block">
+                    <img src="user.jpg"
+                    class="img-fluid" alt="Phone image" style="padding-top: 150px;" height="800px" width="800px">
+                  </div>
+                  <div class="col-xl-6">    
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">User registration form</h3>
+      
+                      <div class="row">
+                        <div class="col-md-12 mb-4">
+                          <div class="form-outline">
+                            <label class="form-label" for="form3Example1m">Full name</label>
+                            <input type="text" id="name" class="form-control form-control-lg" />
+                            <span id="valid1" style="color: red;"></span>
+                            &nbsp;&nbsp;&nbsp;
+                          </div>
+                        </div>
+                        
+      
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example8">Address</label>
+                        <textarea id="address" class="form-control form-control-lg"  rows="3" cols="20">
+                       </textarea>
+                       <span id="valid2" style="color: red;"></span>
+                            &nbsp;&nbsp;&nbsp;
+                       </div>     
+                    
+
+                       <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example99">Contact Details</label>
+                        <input type="text" id="contact" class="form-control form-control-lg" />
+                        <span id="valid3" style="color: red;"></span>
+                        &nbsp;&nbsp;&nbsp;
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example97">Email ID</label>
+                        <input type="email" id="email" class="form-control form-control-lg" />
+                        <span id="valid4" style="color: red;"></span>
+                        &nbsp;&nbsp;&nbsp;
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example97">Password</label>
+                        <input type="password" id="pwd" class="form-control form-control-lg" />
+                        <span id="valid5" style="color: red;"></span>
+                        &nbsp;&nbsp;&nbsp;
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example97">Confirm Password</label>
+                        <input type="password" id="cpwd" class="form-control form-control-lg" />
+                        <span id="valid6" style="color: red;"></span>
+                        &nbsp;&nbsp;&nbsp;
+                      </div>
+      
+                      <div class="d-flex justify-content-end pt-3">
+                        <input type="reset" class="btn btn-light btn-lg"></input>
+                        <button  id="submit"   class="btn btn-warning btn-lg ms-2">Submit form</button>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+</body>
+</html>
