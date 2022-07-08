@@ -64,7 +64,7 @@ $(document).ready(
 
 function acceptAppointment(id) 
 {
-  //  alert(id);
+    alert(id);
     var uid = id;
     console.log(uid);
     console.log("entered function");
